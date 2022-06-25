@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\User;
 
 class HomeControler extends Controller
 {
@@ -15,6 +16,9 @@ class HomeControler extends Controller
 
          {
             return view('dashboard');
+         }
+         else{
+            return view('admin.home');
          }
         }
 
